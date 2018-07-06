@@ -4,6 +4,8 @@ project(tensorflow_catkin)
 find_package(catkin_simple REQUIRED)
 catkin_simple()
 
+find_package(PythonLibs 2.7 REQUIRED)
+
 set(USE_GPU OFF CACHE BOOL "Build Tensorflow with GPU support")
 set(CUDA_ROOT $ENV{CUDA_ROOT} CACHE PATH "CUDA root directory")
 set(CUDNN_ROOT $ENV{CUDNN_ROOT} CACHE PATH "CUDNN root directory")
